@@ -2,202 +2,210 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <title>Collen — Mobile-friendly tools and services</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Collen — Tools, tutorials, and freelance help</title>
-  <meta name="description" content="Collen builds mobile-friendly tools, quick scripts, and clean websites. Contact on WhatsApp for freelancing, tutorials, and product bundles.">
-  <link rel="preload" href="assets/styles.css" as="style">
-  <link rel="stylesheet" href="assets/styles.css">
-  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <meta name="description" content="Collen builds mobile-friendly Python and FFmpeg tools, offers quick freelance services, and responds fast on WhatsApp.">
+  <link rel="canonical" href="https://your-username.github.io/collen-site/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Collen">
+  <meta property="og:description" content="Mobile-friendly tools, fast services, and quick WhatsApp support.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/social-card.png">
+  <meta property="og:url" content="https://your-username.github.io/collen-site/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Collen">
+  <meta name="twitter:description" content="Mobile-friendly tools, fast services, and quick WhatsApp support.">
+  <meta name="twitter:image" content="assets/social-card.png">
+
+  <!-- Favicons -->
+  <link rel="icon" href="assets/favicon-dark.svg" media="(prefers-color-scheme: dark)" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-light.svg" media="(prefers-color-scheme: light)" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-dark.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header class="site-header">
+    <div class="brand">
+      <img src="assets/favicon-dark.svg" alt="Collen icon" class="logo">
+      <span class="site-name">Collen</span>
+    </div>
     <nav class="nav">
-      <a href="#" class="brand">
-        <img src="assets/logo.svg" alt="Collen logo" class="logo">
-        <span>Collen</span>
-      </a>
-      <button id="themeToggle" class="btn ghost">Toggle theme</button>
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#privacy">Privacy</a>
     </nav>
   </header>
 
   <main>
-    <!-- Hero -->
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Collen</h1>
-        <p>Mobile-first tools, quick scripts, and clean sites. Built for speed, tested on Android.</p>
-        <div class="cta-row">
-          <a class="btn primary" href="https://wa.me/27720390167?text=Hi%20Collen%2C%20I%27d%20like%20to%20hire%20you%20or%20try%20your%20tools.">WhatsApp me</a>
-          <a class="btn secondary" href="#tools">Browse tools</a>
-        </div>
+    <section id="home" class="hero">
+      <img src="assets/logo-banner.svg" alt="Collen banner" class="banner">
+      <h1>Tools and services that just work on mobile</h1>
+      <p>Quick Python and FFmpeg utilities, clean websites, and fast support—optimized for Android workflows.</p>
+      <div class="cta-row">
+        <a class="btn btn-whatsapp" href="https://wa.me/27720390167?text=Hi%20Collen%2C%20I%20saw%20your%20site%20and%20want%20to%20chat." target="_blank" rel="noopener">Message on WhatsApp</a>
+        <a class="btn btn-outline" href="#products">View tools</a>
       </div>
-      <div class="hero-media">
-        <img src="assets/thumbnail.jpg" alt="Collen tools preview">
+      <ul class="trust">
+        <li>Fast replies</li>
+        <li>Mobile-first</li>
+        <li>Lightweight downloads</li>
+      </ul>
+      <div id="viewCounter" class="view-counter" aria-live="polite" title="Local visits (device-only)">Views on this device: <span>0</span></div>
+    </section>
+
+    <section id="products" class="section">
+      <h2>Products and downloads</h2>
+      <p>Starter-friendly utilities you can run on Android or desktop. Ask on WhatsApp for help or custom tweaks.</p>
+      <div class="cards">
+
+        <article class="card">
+          <h3>FFmpeg Mobile Toolkit</h3>
+          <p>Batch convert video/audio, compress, and extract—streamlined for low data use.</p>
+          <ul class="meta">
+            <li><strong>Version:</strong> 1.0.0</li>
+            <li><strong>Size:</strong> ~2.5 MB</li>
+          </ul>
+          <div class="actions">
+            <!-- Replace with your GitHub Release or Drive link -->
+            <a class="btn" href="https://github.com/your-username/collen-site/releases/download/v1.0.0/ffmpeg-mobile-toolkit.zip">⬇️ Download</a>
+            <a class="btn btn-outline" href="https://github.com/your-username/ffmpeg-mobile-toolkit">🔗 Source</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Audio Batch Extractor (Python)</h3>
+          <p>One-tap batch audio extraction and normalization from videos.</p>
+          <ul class="meta">
+            <li><strong>Version:</strong> 0.9.2</li>
+            <li><strong>Size:</strong> ~1.2 MB</li>
+          </ul>
+          <div class="actions">
+            <a class="btn" href="https://github.com/your-username/collen-site/releases/download/v0.9.2/audio-batch-extractor.zip">⬇️ Download</a>
+            <a class="btn btn-outline" href="https://github.com/your-username/audio-batch-extractor">🔗 Source</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Simple Site Starter</h3>
+          <p>Template for a fast GitHub Pages site with WhatsApp lead buttons.</p>
+          <ul class="meta">
+            <li><strong>Version:</strong> 1.0.0</li>
+            <li><strong>Size:</strong> ~100 KB</li>
+          </ul>
+          <div class="actions">
+            <a class="btn" href="https://github.com/your-username/collen-site/releases/download/v1.0.0/simple-site-starter.zip">⬇️ Download</a>
+            <a class="btn btn-outline" href="https://github.com/your-username/simple-site-starter">🔗 Source</a>
+          </div>
+        </article>
+
+      </div>
+      <p class="note">Need a custom tool? Send a quick voice note on WhatsApp.</p>
+    </section>
+
+    <section id="services" class="section alt">
+      <h2>Services</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Quick edits</h3>
+          <p>Fast tweaks to videos, audio, or simple websites. Perfect for small fixes.</p>
+          <ul class="meta">
+            <li><strong>Delivery:</strong> 24–48 hours</li>
+            <li><strong>Price:</strong> Request a quote</li>
+          </ul>
+          <a class="btn btn-whatsapp" href="https://wa.me/27720390167?text=Quick%20edits%20quote">Get a quote</a>
+        </article>
+
+        <article class="card">
+          <h3>Tool setup</h3>
+          <p>I’ll set up FFmpeg or Python scripts and show you how to use them on mobile.</p>
+          <ul class="meta">
+            <li><strong>Delivery:</strong> 2–3 days</li>
+            <li><strong>Price:</strong> Request a quote</li>
+          </ul>
+          <a class="btn btn-whatsapp" href="https://wa.me/27720390167?text=Tool%20setup%20quote">Get a quote</a>
+        </article>
+
+        <article class="card">
+          <h3>Starter website</h3>
+          <p>A clean GitHub Pages site with your branding and WhatsApp funnel.</p>
+          <ul class="meta">
+            <li><strong>Delivery:</strong> 3–5 days</li>
+            <li><strong>Price:</strong> Request a quote</li>
+          </ul>
+          <a class="btn btn-whatsapp" href="https://wa.me/27720390167?text=Starter%20website%20quote">Get a quote</a>
+        </article>
       </div>
     </section>
 
-    <!-- Trust bar -->
-    <section class="trust">
-      <ul class="trust-list">
-        <li>Fast on Android</li>
-        <li>Beginner friendly</li>
-        <li>No bloat</li>
-        <li>Freelance-ready</li>
+    <section id="about" class="section">
+      <h2>About Collen</h2>
+      <p>I build practical tools and simple sites that help people create and share faster—especially on mobile. If you’re stuck, I’ll help you fix it quickly.</p>
+      <ul class="skills">
+        <li><strong>Skills:</strong> HTML/CSS, Python scripting, FFmpeg, GitHub Pages</li>
+        <li><strong>Style:</strong> Mobile-first, lightweight, clear copy</li>
+        <li><strong>Support:</strong> WhatsApp-first, quick tutorials</li>
       </ul>
     </section>
 
-    <!-- Tools -->
-    <section id="tools" class="section">
-      <h2>Tools and scripts</h2>
-      <p class="section-sub">Plug-and-play utilities for video, audio, and automation. Add your GitHub download links below.</p>
-      <div class="card-grid">
-        <article class="card">
-          <h3>FFmpeg Quick Convert</h3>
-          <p>Menu-driven conversions for MP4, MP3, WebM. Built for mobile workflows.</p>
-          <div class="pill-row">
-            <span class="pill">Python</span>
-            <span class="pill">FFmpeg</span>
-            <span class="pill">Beginner</span>
-          </div>
-          <div class="card-actions">
-            <a class="btn primary" href="https://github.com/your-username/your-repo/releases/latest" target="_blank" rel="noopener">Download</a>
-            <a class="btn ghost" href="#docs-ffmpeg">Docs</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3>Batch Downloader</h3>
-          <p>Simple CLI to fetch multiple URLs with retries and clean filenames.</p>
-          <div class="pill-row">
-            <span class="pill">Python</span>
-            <span class="pill">CLI</span>
-            <span class="pill">Automation</span>
-          </div>
-          <div class="card-actions">
-            <a class="btn primary" href="https://github.com/your-username/your-repo/releases/latest" target="_blank" rel="noopener">Download</a>
-            <a class="btn ghost" href="#docs-downloader">Docs</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3>Audio Clean-up</h3>
-          <p>Fast noise-trim and normalize for voice notes and tutorials.</p>
-          <div class="pill-row">
-            <span class="pill">FFmpeg</span>
-            <span class="pill">Audio</span>
-            <span class="pill">Creator</span>
-          </div>
-          <div class="card-actions">
-            <a class="btn primary" href="https://github.com/your-username/your-repo/releases/latest" target="_blank" rel="noopener">Download</a>
-            <a class="btn ghost" href="#docs-audio">Docs</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Portfolio -->
-    <section id="portfolio" class="section">
-      <h2>Portfolio</h2>
-      <div class="portfolio-grid">
-        <div class="portfolio-item">
-          <div class="thumb"></div>
-          <h4>Mini product hub</h4>
-          <p>Mobile-first site with WhatsApp contact and tool downloads.</p>
-        </div>
-        <div class="portfolio-item">
-          <div class="thumb"></div>
-          <h4>Video tools page</h4>
-          <p>Beginner-friendly FFmpeg demos and quick actions.</p>
-        </div>
-        <div class="portfolio-item">
-          <div class="thumb"></div>
-          <h4>Freelance landing</h4>
-          <p>One-page pitch with pricing, CTA, and testimonials.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pricing -->
-    <section id="pricing" class="section">
-      <h2>Pricing</h2>
-      <div class="pricing-grid">
-        <div class="pricing-card">
-          <h3>Starter</h3>
-          <p>Basic setup, one tool page, WhatsApp integration.</p>
-          <ul class="feature-list">
-            <li>Mobile-first layout</li>
-            <li>1 product card</li>
-            <li>WhatsApp contact</li>
-          </ul>
-          <a class="btn secondary" href="https://wa.me/27720390167?text=Starter%20plan%20query">Ask about Starter</a>
-        </div>
-        <div class="pricing-card featured">
-          <h3>Pro</h3>
-          <p>Full product hub, 3 tool pages, simple docs.</p>
-          <ul class="feature-list">
-            <li>3 product cards</li>
-            <li>Docs sections</li>
-            <li>Custom branding</li>
-          </ul>
-          <a class="btn primary" href="https://wa.me/27720390167?text=Pro%20plan%20query">Go Pro</a>
-        </div>
-        <div class="pricing-card">
-          <h3>Custom</h3>
-          <p>Tailored features, domain, and deployment support.</p>
-          <ul class="feature-list">
-            <li>Custom pages</li>
-            <li>Domain setup</li>
-            <li>Priority support</li>
-          </ul>
-          <a class="btn secondary" href="https://wa.me/27720390167?text=Custom%20plan%20query">Build custom</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section">
+    <section id="contact" class="section alt">
       <h2>Contact</h2>
-      <p>Message me on WhatsApp or email for freelancing and tool support.</p>
-      <div class="cta-row">
-        <a class="btn primary" href="https://wa.me/27720390167?text=Hi%20Collen%2C%20I%27m%20interested%20in%20your%20work">WhatsApp</a>
-        <a class="btn ghost" href="mailto:hello@collen.dev">Email</a>
+      <div class="contact-grid">
+        <div>
+          <p><strong>WhatsApp:</strong> <a href="https://wa.me/27720390167" target="_blank" rel="noopener">+27 72 039 0167</a></p>
+          <p><strong>Email:</strong> <span id="email">tshakhanivhulendacolen@gmail.com</span> <button class="btn btn-mini" id="copyEmail">Copy</button></p>
+        </div>
+        <div>
+          <a class="btn btn-whatsapp" href="https://wa.me/27720390167?text=Hi%20Collen%2C%20I%20need%20help%20with..." target="_blank" rel="noopener">Message on WhatsApp</a>
+        </div>
       </div>
+      <p class="note">Prefer voice notes? That works—send one and I’ll reply soon.</p>
     </section>
 
-    <!-- Docs anchors (optional) -->
-    <section id="docs-ffmpeg" class="section docs">
-      <h3>FFmpeg Quick Convert — Docs</h3>
-      <ol>
-        <li>Install Python and FFmpeg on your device.</li>
-        <li>Run the script and choose a conversion from the menu.</li>
-        <li>Find outputs in your chosen folder.</li>
-      </ol>
-      <pre><code>ffmpeg -i input.mp4 -c:v libx264 -c:a aac output.mp4</code></pre>
-    </section>
-
-    <section id="docs-downloader" class="section docs">
-      <h3>Batch Downloader — Docs</h3>
-      <ol>
-        <li>Paste URLs into urls.txt.</li>
-        <li>Run the script to fetch all files.</li>
-        <li>Check the /downloads folder.</li>
-      </ol>
-    </section>
-
-    <section id="docs-audio" class="section docs">
-      <h3>Audio Clean-up — Docs</h3>
-      <ol>
-        <li>Choose input voice note.</li>
-        <li>Normalize and trim silence.</li>
-        <li>Export as MP3.</li>
-      </ol>
+    <section id="privacy" class="section">
+      <h2>Privacy</h2>
+      <p>This site uses no cookies and no trackers by default. If analytics are added later, they’ll be privacy-friendly and disclosed here.</p>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>© <span id="year"></span> Collen. Built for mobile.</p>
+    <p>© <span id="year"></span> Collen • Built for mobile</p>
   </footer>
 
-  <script src="assets/script.js"></script>
+  <!-- Optional privacy-friendly analytics (disabled by default) -->
+  <!-- Plausible: replace data-domain with your domain, then uncomment -->
+  <!-- <script defer src="https://plausible.io/js/script.js" data-domain="your-username.github.io"></script> -->
+
+  <!-- GoatCounter: replace data-goatcounter with your site, then uncomment -->
+  <!-- <script data-goatcounter="https://YOURCODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script> -->
+
+  <script src="js/main.js"></script>
+
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Collen",
+    "email": "mailto:tshakhanivhulendacolen@gmail.com",
+    "telephone": "+27 72 039 0167",
+    "url": "https://your-username.github.io/collen-site/",
+    "knowsAbout": ["Python scripting", "FFmpeg", "Mobile websites", "GitHub Pages"],
+    "areaServed": "South Africa",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "telephone": "+27 72 039 0167",
+      "email": "tshakhanivhulendacolen@gmail.com",
+      "availableLanguage": "en"
+    }
+  }
+  </script>
 </body>
-            </html>
+</html>
