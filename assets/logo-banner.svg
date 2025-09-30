@@ -12,3 +12,6 @@
   <text x="230" y="180" font-size="64" font-family="Arial" font-weight="700" fill="#e6eef8">Collen</text>
   <text x="230" y="230" font-size="28" font-family="Arial" fill="#a9b4c2">Mobile-friendly tools and services</text>
 </svg>
+<text x="230" y="280" font-size="30" fill="#fff">
+  Includes Collenv.zip tools
+</text>
